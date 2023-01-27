@@ -16,10 +16,10 @@ const Cart = ({ cart }) => {
         <div className="cart">
             <h4>Order Summary</h4>
             <p>Selected Items: {quantity}</p>
-            <p>Total Price: {total}</p>
-            <p>Total Shipping Charge: {shipping}</p>
-            <p>Tax: {tax}</p>
-            <h5>Grand Total: {grandTotal.toFixed(2)}</h5>
+            <p>Total Price: ${total}</p>
+            <p>Total Shipping Charge: ${shipping}</p>
+            <p>Tax: ${tax}</p>
+            <h5>Grand Total: ${grandTotal.toFixed(2)}</h5>
         </div>
     );
 };
