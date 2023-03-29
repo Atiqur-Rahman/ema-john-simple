@@ -1,10 +1,11 @@
 .form-container {
-    width: 600px;
-    margin: 0 auto;
+    width: 500px;
+    margin: 140px auto;
     border: 1px solid #95a0a7;
     border-radius: 8px;
     display: flex;
     justify-content: center;
+    box-shadow: -13px 13px rgba(255, 224, 179, 1);
 }
 .form-title {
     font-weight: 400;
@@ -38,9 +39,42 @@
     font-weight: 400;
     font-size: 21px;
     padding: 0;
+    cursor: pointer;
+}
+.form-submit:hover {
+    background: rgba(255, 153, 0, 0.5);
+}
+.form-confirmation {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    margin: 10px;
 }
 .form-link {
     color: rgba(255, 153, 0, 1);
     font-weight: 400;
     text-decoration: none;
+    padding-left: 5px;
+}
+.line-style {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    margin: 30px 0 30px;
+}
+.line-style span {
+    background: #fff;
+    padding: 0 10px;
+}
+.form-container button {
+    width: 415px;
+    height: 55px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #95a0a7;
+    font-weight: 400;
+    font-size: 21px;
+    padding: 0;
+    margin-bottom: 50px;
 }
