@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import useProducts from '../../hooks/useProducts';
-import { addToDb, getStoredCart } from '../../utilities/fakedb';
+import { addToDb } from '../../utilities/fakedb';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './Shop.css';
@@ -31,7 +30,6 @@ const Shop = () => {
     }, []);
 
     const handleAddToCart = (selectedProduct) => {
-        console.log(selectedProduct);
         const exists = cart.find((product) => product._id === selectedProduct._id);
         let newCart = [];
         if (!exists) {
@@ -57,7 +55,7 @@ const Shop = () => {
                 <div className="pagination">
                     {[...Array(pageCount).keys()].map((number) => (
                         <button className={page === number ? 'selected' : ''} onClick={() => setPage(number)}>
-                            {number}
+                            {number + 1}
                         </button>
                     ))}
                     <select onChange={(e) => setSize(e.target.value)}>

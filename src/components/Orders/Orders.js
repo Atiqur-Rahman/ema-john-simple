@@ -8,7 +8,6 @@ import ReviewItem from '../ReviewItem/ReviewItem';
 import './Orders.css';
 
 const Orders = () => {
-    const [products, setProducts] = useProducts();
     const [cart, setCart] = useCart();
     const navigate = useNavigate();
 
